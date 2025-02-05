@@ -19,10 +19,14 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/bd-invite/mlp.png"
+        url: "/bd-invite/mlp.png",
+        width: 700,
+        height: 600,
       },
       {
-        url: "/bd-invite/mlp-sm.png"
+        url: "/bd-invite/mlp-sm.png",
+        width: 500,
+        height: 400,
       },
     ]
   }

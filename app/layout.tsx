@@ -17,8 +17,16 @@ export const metadata: Metadata = {
   title: "30 BDay",
   description: "Mariana y Diana ya estan viejas y cumplen 30. :]",
   openGraph: {
-    images: 'https://marianapalafox.github.io/bd-invite/mlp.png'
+    images: [
+      {
+        url: "/bd-invite/mlp.png"
+      },
+      {
+        url: "/bd-invite/mlp-sm.png"
+      },
+    ]
   }
+
 };
 
 export default function RootLayout({

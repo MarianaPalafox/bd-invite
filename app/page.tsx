@@ -12,6 +12,8 @@ export default function Home() {
   return (
     <div>
       <main>
+         <div className="cloud-bottom" />
+         <div className="cloud-top" />
         <div className="stars-wrapper">
             <svg className='stars' height='100%' width='100%' preserveAspectRatio="none">
                 {createStars().map((start,i)=>(

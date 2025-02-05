@@ -134,3 +134,52 @@ body {
         width: 100%;
     }
 }
+
+.cloud-bottom{
+    position: absolute;
+    top:0;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg, transparent 0%, rgba(244, 253, 255, 1) 55%),url('/bd-invite/clouds.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    animation: 3s ease-in-out 1s forwards down;
+    animation-iteration-count: 1;
+}
+
+.cloud-top {
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg, transparent 0%, rgba(244, 253, 255, 1) 55%), url('/bd-invite/clouds.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    animation: 3s ease-in-out 1s forwards up;
+    animation-iteration-count: 1;
+    transform: rotate(180deg);
+}
+
+@keyframes down {
+    50% {
+        translate: 0px 75vh;
+    }
+
+    100% {
+        translate: 0px 100vh;
+        display: none;
+    }
+}
+
+@keyframes up {
+    50% {
+        translate: 0px -75vh;
+    }
+
+    100% {
+        translate: 0px -100vh;
+        display: none;
+    }
+}

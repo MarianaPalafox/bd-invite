@@ -144,7 +144,7 @@ body {
     background-image: linear-gradient(180deg, transparent 0%, rgba(244, 253, 255, 1) 55%),url('/bd-invite/clouds.png');
     background-repeat: repeat-x;
     background-position: top;
-    animation: 3s ease-in-out 1s forwards down;
+    animation: 3s linear 1s forwards down;
     animation-iteration-count: 1;
 }
 
@@ -157,13 +157,17 @@ body {
     background-image: linear-gradient(180deg, transparent 0%, rgba(244, 253, 255, 1) 55%), url('/bd-invite/clouds.png');
     background-repeat: repeat-x;
     background-position: top;
-    animation: 3s ease-in-out 1s forwards up;
+    animation: 3s linear 1s forwards up;
     animation-iteration-count: 1;
     transform: rotate(180deg);
 }
 
 @keyframes down {
     50% {
+        translate: 0px 50vh;
+    }
+
+    75% {
         translate: 0px 75vh;
     }
 
@@ -175,6 +179,10 @@ body {
 
 @keyframes up {
     50% {
+        translate: 0px -50vh;
+    }
+
+    75% {
         translate: 0px -75vh;
     }
 

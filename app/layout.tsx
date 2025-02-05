@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "30 BDay",
   description: "Mariana y Diana ya estan viejas y cumplen 30. :]",
+  openGraph: {
+    images: 'https://marianapalafox.github.io/bd-invite/mlp.png'
+  }
 };
 
 export default function RootLayout({
